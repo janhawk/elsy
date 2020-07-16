@@ -1,27 +1,17 @@
 import React from 'react';
 
+import Icon from './core/Icon';
 class Person extends React.Component {
     render() {
         return (
-            <div style={{
-                color:this.props.color, fontSize:this.props.fontSize + 'px'
-            }}>
-            <div className="container">
-            <div className="box">
-       
-                <div class="col-3">
-                    <div class="material-icons">
-                    directions_walk
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="material-icons">
-                    directions_walk
-                    </div>
-                </div>
-            </div>
-            </div>
-            </div>
+          
+            <div className="box col-md-2 col-6">   
+            {/* <span class="material-icons" style={{fontSize:100, color:"black"}}>    */}
+                {/* directions_walk */}
+            {/* </span> */}
+
+                <Icon name={"directions_walk"} color="black"/>               
+            </div> 
         );
     }
 }
